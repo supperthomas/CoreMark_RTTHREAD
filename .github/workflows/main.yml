@@ -40,7 +40,8 @@ jobs:
         shell: bash
         run: |
           sudo apt-get update
-          sudo apt-get -qq install gcc-multilib libncurses5-dev scons qemu-system-arm
+          sudo apt-get -qq install gcc-multilib libncurses5-dev scons
+          sudo DEBIAN_FRONTEND=noninteractive apt-get install -y qemu-system-arm
           sudo python -m pip install --upgrade pip -qq
           pip install requests -qq
           git config --global http.postBuffer 524288000
