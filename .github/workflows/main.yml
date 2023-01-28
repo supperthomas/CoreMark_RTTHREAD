@@ -73,4 +73,5 @@ jobs:
           pushd bsp/$RTT_BSP && pkgs --update && popd
           scons -C bsp/$RTT_BSP
           cd bsp/qemu-vexpress-a9
-          sudo qemu-nographic.sh
+          ls
+          sudo ./qemu-nographic.sh
