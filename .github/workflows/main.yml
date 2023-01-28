@@ -69,4 +69,4 @@ jobs:
           cat bsp/$RTT_BSP/.config
           pushd bsp/$RTT_BSP && pkgs --update && popd
           scons -C bsp/$RTT_BSP
-          ./qemu-nographic.bat
+          ./bsp/qemu-vexpress-a9/qemu-nographic.bat
