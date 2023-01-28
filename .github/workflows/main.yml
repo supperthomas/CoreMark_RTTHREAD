@@ -74,4 +74,5 @@ jobs:
           scons -C bsp/$RTT_BSP
           cd bsp/qemu-vexpress-a9
           ls
-          sudo ./qemu-nographic.sh
+          sudo nohup ./qemu-nographic.sh > cmd3.out 2>&1 &
+          cat cmd3.out
