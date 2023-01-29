@@ -75,4 +75,5 @@ jobs:
           cd bsp/qemu-vexpress-a9
           ls
           sudo nohup ./qemu-nographic.sh > cmd3.out 2>&1 &
+          sleep 100
           cat cmd3.out
