@@ -447,7 +447,6 @@ jobs:
         - {RTT_PACKAGE: "CONFIG_PKG_USING_SOEM", RTT_PACKAGE_CMD: "core_mark"}
         - {RTT_PACKAGE: "CONFIG_PKG_USING_QPARAM", RTT_PACKAGE_CMD: "core_mark"}
         - {RTT_PACKAGE: "CONFIG_PKG_USING_CorevMCU_CLI", RTT_PACKAGE_CMD: "core_mark"}
-
     steps:
       - uses: actions/checkout@v3
         with:
